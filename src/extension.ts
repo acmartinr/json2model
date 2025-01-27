@@ -6,6 +6,7 @@ import * as vscode from "vscode";
 import { convertJsonToJava } from "./convertJsonToJava";
 import { convertJsonToPython } from "./convertJsonToPython";
 import { convertJsonToCSharp } from "./convertJsonToCSharp";
+import { cleanJsonString } from "./cleanJson";
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -65,7 +66,11 @@ export function activate(context: vscode.ExtensionContext) {
       const jsonText = document.getText(selection);
 
       try {
-        const jsonObject = JSON.parse(jsonText);
+        // Primero, limpiamos el texto con nuestra nueva función
+        const cleanedText = cleanJsonString(jsonText);
+
+        const jsonObject = JSON.parse(cleanedText);
+
         let result = "";
 
         switch (language) {
