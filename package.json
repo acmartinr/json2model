@@ -2,7 +2,7 @@
   "name": "json2entity",
   "displayName": "Json to Entity",
   "description": "Visual Studio Code extension for convert any JSON model to any language class",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.96.0"
   },
