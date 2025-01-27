@@ -1,11 +1,12 @@
 {
-  "name": "rulewatcher",
-  "displayName": "RuleWatcher",
-  "description": "Una extensión para Visual Studio Code diseñada para monitorear en tiempo real la carpeta de tu proyecto y garantizar que todos los archivos cumplan con los estándares de codificación y las reglas específicas del lenguaje de programación. Con RuleWatcher, puedes automatizar la validación de estilos, detectar inconsistencias y recibir alertas sobre posibles incumplimientos, asegurando que tu proyecto se mantenga limpio, organizado y alineado con las mejores prácticas. Ideal para equipos que buscan mantener la calidad del código y evitar problemas de integración.",
-  "version": "0.0.1",
+  "name": "json2entity",
+  "displayName": "Json to Entity",
+  "description": "Visual Studio Code extension for convert any JSON model to any language class",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.96.0"
   },
+  "publisher": "albertomartin1996",
   "categories": [
     "Other"
   ],
@@ -54,5 +55,6 @@
     "typescript": "^5.7.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "icon": "images/iconlogo.png"
 }
